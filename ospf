@@ -1,0 +1,14 @@
+OSPF features:
+Open shortest path first
+It is an IGP - Interior gateway protocol and it is used to route the info
+within the autonotmous system
+It uses the multicast address 224.0.0.5 and .6
+cost can be calculated 10power of 8
+Classless routing protocol supports VLSM and CIDR
+send hello packets in reg intervals
+router id plays an important role 
+three types of ospf table
+Neighbour table: contains list of directly connected routers cmd: show ip ospf neighbour
+topology table: contanis list of all possible route inside the area
+it is also knon as LSDB link state Database CMD : Show ip ospf database
+Routing Table: list of best path to each destination CMd: show ip route

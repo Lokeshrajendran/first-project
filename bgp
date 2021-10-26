@@ -1,0 +1,27 @@
+BGP : Border Gateway Protocol
+It is an exterior gateway protocol used to route the information between different Autonomous System
+Designed for huge inter network like internet
+slowest routing protocol in the world
+It is an application layer protocol used TCP port 179
+It sends the update to the manually defined neighbour as unicast
+
+Loop prevention protocol:
+whenever a router sees it's own Autonomous number in the router update, it will drop and ignore it
+
+BGP Tables:
+Neighbour table: information about all the list of manually defined neighbour will be managed here
+ cmd: show ip bgp neighbours
+ Database Table: contanis list of all possible network learnt by BGP CMD : show ip bgp
+ Routing table: list of best path will be available here CMD: show ip Route
+ 
+ Basic Config syntax: 
+ router bgp [autonomous number]
+ network[network id]
+ neighbour[ip address] remote as [As number]
+ 
+ idle
+ connect
+ active
+ open sent
+ open confirm
+ established
